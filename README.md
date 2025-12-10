@@ -193,15 +193,45 @@ print(result.json())
 - `gte`: Greater than or equal
 - `lte`: Less than or equal
 
-## Future Improvements
+## Running Tests
 
-- **Async Execution**: Support for async node handlers
-- **WebSocket Streaming**: Real-time execution log streaming
-- **Persistent Storage**: SQLite/PostgreSQL backend
-- **Parallel Nodes**: Execute independent nodes concurrently
-- **Subgraphs**: Nested workflow composition
-- **Retry Logic**: Automatic retry on node failures
+### Quick Demo
+```bash
+python demo.py
+```
+
+### Comprehensive Test Suite
+```bash
+python demo_comprehensive.py
+```
+
+The comprehensive test suite validates:
+- ✓ Health check endpoint
+- ✓ Linear workflow execution
+- ✓ Conditional branching
+- ✓ Looping until conditions met
+- ✓ State management and retrieval
+- ✓ Tool registry functionality
+- ✓ Error handling with proper HTTP codes
+- ✓ Complete Code Review workflow
+
+## What Could Be Improved With More Time
+
+The assignment mentioned optional bonus features that would enhance the system:
+
+### Bonus Features (Not Implemented)
+- **WebSocket Streaming**: Real-time step-by-step log streaming during execution
+- **Async Execution**: Support for async/await in long-running node handlers
+- **Background Tasks**: Non-blocking workflow execution with status polling
+- **Persistent Storage**: SQLite or PostgreSQL instead of in-memory storage
+
+### Additional Improvements
+- **Parallel Execution**: Run independent nodes concurrently
+- **Subgraph Support**: Nested workflow composition
+- **Retry Logic**: Automatic retry on transient failures
 - **Timeout Handling**: Per-node execution timeouts
+- **Metrics & Monitoring**: Prometheus metrics, execution analytics
+- **API Authentication**: JWT-based auth for production use
 
 ## License
 
