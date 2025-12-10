@@ -1,4 +1,4 @@
-# Agent Workflow Engine
+# MAWE - Mine Agent Workflow Engine
 
 A minimal graph-based workflow execution system built with FastAPI. This engine allows you to define sequences of processing steps (nodes), connect them via edges, maintain shared state, and execute workflows end-to-end via REST APIs.
 
